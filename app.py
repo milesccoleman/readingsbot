@@ -10,7 +10,6 @@ bot = ChatBot('LBH_BOT',
         "chatterbot.adapters.logic.ClosestMatchAdapter"
     ],
     filters="chatterbot.filters.RepetitiveResponseFilter",
-    read_only=True,
 )
 
 conv = open('chats.txt', 'r').readlines()
