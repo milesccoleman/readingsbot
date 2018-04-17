@@ -1,14 +1,10 @@
 from flask import Flask, render_template, request
 from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
-from chatterbot.filters import RepetitiveResponseFilter 
 
 app = Flask(__name__)
 
-bot = ChatBot(
-    "LBH_BOT", 
-    filters=["chatterbot.filters.RepetitiveResponseFilter"]
-)
+bot = ChatBot('LBH_BOT')
 
 conv = open('chats.txt', 'r').readlines()
 
