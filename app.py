@@ -5,7 +5,8 @@ from chatterbot.filters import RepetitiveResponseFilter
 
 app = Flask(__name__)
 
-bot = ChatBot('LBH_BOT', 
+bot = ChatBot(
+    "LBH_BOT", 
     filters=["chatterbot.filters.RepetitiveResponseFilter"]
 )
 
