@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from chatterbot.trainers import ListTrainer
 from chatterbot import ChatBot
+from chatterbot.filters import RepetitiveResponseFilter 
 
 app = Flask(__name__)
 
