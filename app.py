@@ -5,11 +5,7 @@ from chatterbot import ChatBot
 app = Flask(__name__)
 
 bot = ChatBot('LBH_BOT', 
-    logic_adapters=[
-        "chatterbot.adapters.logic.ClosestMeaningAdapter",
-        "chatterbot.adapters.logic.ClosestMatchAdapter"
-    ],
-    filters="chatterbot.filters.RepetitiveResponseFilter",
+    filters=["chatterbot.filters.RepetitiveResponseFilter"]
 )
 
 conv = open('chats.txt', 'r').readlines()
