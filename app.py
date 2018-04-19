@@ -5,7 +5,6 @@ from chatterbot import ChatBot
 app = Flask(__name__)
 
 bot = ChatBot('LBH_BOT', 
-    read_only=True,
 )
 
 conv = open('chats.txt', 'r').readlines()
